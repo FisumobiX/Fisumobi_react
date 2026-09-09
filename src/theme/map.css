@@ -1,0 +1,18 @@
+.tabbar{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30%;
+    z-index: 10;
+    --background: #fff;
+    --color: #007aff; 
+    --border: none;
+    --color-selected: #777;
+    opacity: 0.8;
+  }
+  #tab-button-ruotsi-norja{
+    border-right: 1px solid #ccc;
+  }
+  .tabbar icon {
+    font-size: 1rem;
+  } 

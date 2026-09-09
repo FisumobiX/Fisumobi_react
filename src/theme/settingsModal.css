@@ -1,0 +1,30 @@
+.settings-header ion-toolbar {
+    --background: #999; 
+    --color: #ffffff;    
+}
+.custom-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background: #999; 
+    color: #000;
+} 
+.custom-IonItem{
+    --background: var(--header-bg);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--gray-border);
+    padding: 1px 1px;
+}
+body.dark .custom-IonItem{
+    --background: var(--primary-black);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--gray-border);
+}
+body.dark  .settings-header ion-toolbar {
+--background:var(--secondary-gray); 
+--color: #ffffff;    
+}

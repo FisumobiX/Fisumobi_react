@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@null</item>
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/splash_background</item>
+
+        <!-- ⭐ Tämä on kriittinen Android 12+:lle -->
+        <!-- <item name="android:windowBackground">@android:color/white</item> -->
+
+    </style>
+
+</resources>
+
+
+
+
+

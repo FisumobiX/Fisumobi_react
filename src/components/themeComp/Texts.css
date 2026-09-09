@@ -1,0 +1,95 @@
+.kalastupaikkaLista {
+   position: relative;
+   top: -5px;
+   background: var(--bg-background);
+ }
+
+.kalastupaikkaLista ion-item {
+   border: 1px solid var(--border-color);
+   --background: var(--bg-component-header);
+   color: var(--text-color);
+ }
+
+.kalastupaikkaHeader{
+   background: var(--bg-page-header);
+   color: var(--text-color);
+}
+.pdfText{
+   color: var(--link);
+}
+
+/*KALAPAIKKA*/
+
+.articleText{
+   /* height: 100%; */
+   min-height: 100%;
+   margin-top: 0;
+   bottom: 0;
+   padding: 1em;
+   font-family: sans-serif;
+   color: var(--text-color);
+   background-color: var(--bg-background);
+}
+
+.textIntroduction{
+   padding-top: 1px;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+   padding-bottom: 1px;
+   background-color: var(--textIntroduction);
+}
+
+.ionAccordion{
+   background-color: var(--bg-background);
+   color: var(--text-color);
+   padding-bottom: 1em;
+}
+
+.links{
+   color: var(--link);
+}
+
+.kalapaikkaKuva{
+   margin-top: 2em;
+   text-align: center;
+}
+
+/* body.dark .kalastupaikkaLista {
+   position: relative;
+   top: -5px;
+   background: var(--bg-background);
+ } */
+
+ /* body.dark .kalastupaikkaLista ion-item {
+   border: 1px solid var(--border-color);
+   --background: var(--bg-component-header);
+   color: var(--text-color);
+ }
+
+ body.dark .kalastupaikkaHeader{
+   background: var(--bg-page-header);
+   color: var(--text-color);
+   font-size: 0.7em;
+} */
+
+/*KALAPAIKKA*/
+
+/* body.dark .articleText{
+   color: var(--text-color);
+   background-color: var(--bg-background);
+}
+
+body.dark .textIntroduction{
+
+   background-color: var(--textIntroduction);
+}
+
+body.dark .ionAccordion{
+   background-color: var(--bg-background);
+   color: var(--text-color);
+
+} */
+
+
+
+

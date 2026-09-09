@@ -1,0 +1,183 @@
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  animation: fadeOut 3s ease forwards; 
+}
+
+.page-overlay {
+  background-color: var(--bg-background);
+}
+
+@keyframes fadeOut{
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+
+.custom-IonContent{
+  --background: #DCDCDC;
+}
+.weather-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-background);
+  color: var(--text-color);
+}
+.weather-table td {
+  padding-right: 0;
+} 
+
+.weather-table td span img{
+  margin-left: -10px !important;
+  margin-right: '1rem' 
+} 
+.weather-table th.city {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+.header{
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--bg-page-header);
+  color: var(--text-color);
+}
+/* 5 päivän ennuste */
+.forecast-subtable td {
+  font-size: 0.8rem;
+  background-color: var(--bg-background);
+  color: var(--text-color);
+  min-width: 20%;
+  max-width: 20%;
+}
+.forecast-subtable td svg{
+  font-size: 0.8rem;
+}
+
+/* 3 päivän ennuste */
+
+.contentWeather{
+  background-color:var(--border-color);
+  background: var(--bg-accordion-header);
+}
+
+  
+
+.customAccordionHeaderWeather ion-item{
+  --background: #F5F5F5;
+  color: var(--text-color);
+} 
+ion-accordion.customAccordionHeaderWeather.accordion-expanded ion-item[slot="header"] ion-label {
+  color: var(--text-color);
+}
+
+ion-accordion.customAccordionHeaderWeather.accordion-collapsed
+ion-item[slot="header"] ion-label {
+  color: var(--text-color);
+} 
+
+ion-list.customIonListWeather{
+  background: #F5F5F5;
+}
+
+ion-accordion.customAccordionHeaderWeather.accordion-collapsing ion-item[slot='header'],
+ion-accordion.customAccordionHeaderWeather.accordion-collapsed ion-item[slot='header'] {
+  --background: var(--bg-accordion-header);
+  --color: var(--ion-color-light-contrast);
+}
+
+ion-accordion.customAccordionHeaderWeather.accordion-expanding ion-item[slot='header'],
+ion-accordion.customAccordionHeaderWeather.accordion-expanded ion-item[slot='header'] {
+  --background: var(--blue-theme);
+  --color: var(--ion-color-primary-contrast);
+}
+
+/* ----- DARK MODE ----- */
+
+body.dark .custom-IonContent{
+  /* background: #374151; */
+  --background: #374151;
+}
+
+body.dark .weather-table th.city {
+  /* background-color: var(--bg-component-header); */
+  color: #fff;
+}
+
+body.dark .forecast-subtable td {
+  background-color: var(--bg-background);
+  color: #fff;
+  width: 20%;
+}
+
+body.dark .weather-table td strong {
+   color: #fff;
+}
+
+/* 3 päivän ennuste */
+/* body.dark .customAccordionHeaderWeather ion-item{
+  --background: #707a82;
+  color: var(--text-color);
+} 
+ body.dark ion-accordion.customAccordionHeaderWeather.accordion-expanded ion-item[slot="header"] ion-label {
+  color: var(--text-color);
+}
+body.dark ion-list.customIonListWeather{
+  background:  #707a82;
+
+} */
+
+
+body.dark ion-accordion.customAccordionHeaderWeather.accordion-expanding ion-item[slot='header'],
+body.dark ion-accordion.customAccordionHeaderWeather.accordion-expanded ion-item[slot='header'] {
+  --background: var(--blue-theme);
+  --color: var(--ion-color-primary-contrast);
+}
+
+body.dark .customAccordionHeaderWeather ion-item {
+  --background: #F5F5F5;
+  color: #333;
+}
+
+
+body.dark .contentWeather{
+  background-color:var(--border-color);
+  background: var(--bg-accordion-header);
+  
+}
+
+/* ----- MOBIILIYSTÄVÄLLISYYS ----- */
+@media (max-width: 600px) {
+
+  .weather-table th,
+  .weather-table td {
+    padding: 0.25rem;
+  }
+
+  .weather-table th.city {
+    font-size: 1.2rem;
+  }
+
+  .forecast-subtable {
+    width: 100%;
+  }
+
+  .forecast-subtable td {
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+    width: 20%;
+  }
+
+  .forecast-subtable td img {
+    margin: 0.5rem 0;
+  }
+}

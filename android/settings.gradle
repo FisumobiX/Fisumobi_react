@@ -1,0 +1,8 @@
+include ':app'
+include ':capacitor-cordova-android-plugins'
+project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
+
+include ':wifi-status'
+project(':wifi-status').projectDir = new File(rootProject.projectDir, '../src/plugins/wifistatus/android')
+
+apply from: 'capacitor.settings.gradle'

@@ -1,0 +1,248 @@
+:root {
+  --header-height: 56px;
+  --footer-height: 56px;
+  --control-offset: 54px;
+}
+
+#osm-map-container,
+#osm-map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  inset: 0;
+}
+
+#osm-map{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#osm-map img {
+  image-rendering: crisp-edges; /* terävä rasteri */
+  image-rendering: pixelated;   /* jos haluat "selkeän pikselimäisen" vaikutelman */
+}
+
+.ol-zoom {
+   top: 10px; 
+}
+
+.ol-attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px; 
+}
+
+.ol-attribution ul {
+  font-size: 10px;
+  text-align: left; 
+}
+
+.ol-scale-line{
+  position: absolute;
+  background: #fff;
+  /* bottom: 100px !important; */
+  bottom: 2px;
+  opacity: 0.9 !important;
+}
+
+#locate-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2000;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;  
+  font-size: 20px;
+}
+
+#locate-btn.follow-active {
+  background: #99FF33;
+  opacity: 1;
+}
+#locate-btn svg{
+  color: #333;
+  font-size: 25px;
+}
+
+.compass-control {
+  position: absolute;
+  top: 50px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;               /* keskitys */
+  align-items: center;         /* keskitys pystysuunnassa */
+  justify-content: center;     /* keskitys vaakasuunnassa */
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transform-origin: center;
+  transition: transform 0.2s linear;
+  z-index: 2000;
+}
+
+.compass-control svg {
+  width: 34px;   /* nuolen koko */
+  height: 34px;
+  display: block;
+}
+
+.compass-control button {
+  background: white;
+  border-radius: 4px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#settings-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 12000;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#settings-panel {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+  z-index: 2;
+  background: white;
+  color:#333;
+  padding: 15px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.settings-close-btn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.settings-close-btn svg{
+  color: var(--blue-theme);
+}
+.settings-close-btn-X{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.8em;
+}
+
+.info-box {
+  background: #f3f3f3;
+  color:#333;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.info-box.warning{
+  background:var(--warning);
+  color: #000;
+}
+
+
+/*LEAFT TYYLIT*/ 
+#leaftmap-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#leaft-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* #leaftmap-container {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+}
+
+#leaft-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+} */
+
+.leaflet-control-attribution {
+
+    bottom: 160px !important;  
+    right: 10px;
+    z-index: 1000;
+}
+
+/* .locate-control {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+.locate-control button {
+  background: white;
+  border-radius: 4px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+} */
+
+
+
+
+
+

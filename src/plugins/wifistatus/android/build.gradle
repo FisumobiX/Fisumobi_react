@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.fisumobi.wifistatus"
+    compileSdkVersion 36
+
+    defaultConfig {
+        minSdkVersion 22
+    }
+}
+
+dependencies {
+    implementation project(':capacitor-android')
+}
+

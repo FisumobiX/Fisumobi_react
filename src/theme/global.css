@@ -1,0 +1,110 @@
+html, body, ion-app, ion-page {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+:root {
+    --ion-color-primary: #007aff;
+    --ion-color-primary-rgb: 0, 122, 255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #006ae0;
+    --ion-color-primary-tint: #1a8cff;
+  }
+
+/* *, pois kaikki oletusmarginaalit ja -paddingit */
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue-theme:#007aff;
+  --bg-transparent:transparent;
+  --bg-background:#f8f8ff; /*Ghost White */
+  --bg-page-header:#bcbdc5;
+  --bg-component-header:#c8cad3;
+  --bg-accordion-header:#dbe4f0;
+  --text-color: #121212;
+  --border-color:#ededf0;
+  --selected: #BFDBFE;
+  --warning: #ff6b22;
+  --textIntroduction: #DCDCDC;
+  --link: blue;
+}
+
+/* Dark mode */
+body.dark {
+  --blue-theme:#007aff;
+  --bg-transparent:transparent;
+  --bg-background:#2F343D;
+  --bg-page-header:#202630;
+  --bg-component-header:#2c343c;
+  --bg-accordion-header:#414d58;
+  --text-color:#F0F0F4;
+  --border-color:#171d27;
+  --textIntroduction: #444850;
+  --link: aqua;
+ 
+}
+
+hr{
+    height: 1px;
+    color: #999;
+    background: #999;
+    font-size: 0;
+    border: 0;
+}
+body.dark hr{
+    color: #0080ff;
+    background: #0080ff;
+
+}
+  
+
+
+/* html {
+  font-size: 100%;
+  @media (max-width: 289px) {
+      font-size: 45%;
+  }
+  @media (min-width: 290px) {
+      font-size: 50%;
+  }
+  @media (min-width: 300px) {
+      font-size: 52.5%;
+  }
+  @media (min-width: 320px) {
+      font-size: 55.5%;
+  }
+  @media (min-width: 325px) {
+      font-size: 56.5%;
+  }
+  @media (min-width: 326px) {
+      font-size: 57%;
+  }
+  @media (min-width: 330px) {
+      font-size: 59%;
+  }
+  @media (min-width: 360px) {
+      font-size: 62.5%;
+  }
+  @media (min-width: 411px) {
+      font-size: 70%;
+  }
+  @media (min-width: 500px) {
+      font-size: 85%;
+  }
+  @media (min-width: 720px) {
+      font-size: 100%;
+  }
+  @media (min-width: 1000px) {
+      font-size: 110%;
+  }
+} */
+
+

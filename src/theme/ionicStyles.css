@@ -1,0 +1,130 @@
+/*Kartta ja kalapaikka popover*/
+.list-md {
+  background: var(--textIntroduction)!important;
+  border-width: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ion-spinner {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+ion-title {
+  --color:var(--blue-theme);
+}
+.custom-IonToolbar ion-menu-button,
+.custom-IonToolbar ion-back-button {
+  color: var(--text-color);
+}
+
+.custom-IonToolbar{
+  --background: var(--bg-page-header);
+  z-index: 10;  
+}
+.custom-IonMenuButton{
+  background: var(--bg-page-header);
+  color: var(--text-color);
+}
+ion-toolbar.custom-IonToolbar-bottom{
+  --background: var(--bg-page-header); /*footer color*/
+  --min-height: 56px;
+}
+/*const footer joka sivulla*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Dark mode versio */
+body.dark .custom-IonToolbar {
+  background: var(--bg-page-header);
+}
+
+/* Dark mode menu-buttonille */
+body.dark ion-menu-button::part(native) {
+  background: var(--bg-page-header);
+  color: #ccc;
+}
+
+/* body.dark .settings-header ion-toolbar {
+--background: #222428;
+--color: #ffffff;
+} */
+
+body.dark .custom-close {
+background: #222428; /* dark mode */
+color: #fff;
+}
+body.dark ion-toolbar.custom-IonToolbar-bottom{
+  --background: var(--bg-page-header);
+  --min-height: 56px;
+}
+body.dark .footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body.dark .custom-footer {
+  height: 56px;
+  --background: var(--bg-page-header);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.custom-IonList-Header{
+  background-color: var(--bg-page-header);
+  color: var(--text-color);
+  font-weight: 600;
+}
+.custom-IonList{
+  background-color: var(--bg-component-header);
+  margin: 0;
+  padding: 0;
+}
+.custom-IonItem{
+  --background: var(--bg-component-header);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  /* padding: 1px 1px; */
+}
+.custom-IonList svg{
+  color: var(--blue-theme);
+  font-size: 1.2em;
+  margin-right: 1em;
+}
+.custom-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg-page-header);
+  color: #000;
+}
+  
+body.dark .custom-IonContent{
+  --background: var(--background);
+  --color: var(--text-color);
+}
+body.dark .custom-IonListHeader{
+  background-color: var(--bg-page-header);
+  color: var(--text-color);
+}
+.body.dark .custom-IonList{
+  background-color: var(--bg-component-header);
+}
+body.dark .custom-IonItem{
+  --background: var(--bg-component-header);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}

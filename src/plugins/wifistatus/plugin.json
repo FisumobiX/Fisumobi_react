@@ -1,0 +1,10 @@
+{
+    "name": "WifiStatus",
+    "id": "wifi-status",
+    "version": "1.0.0",
+    "android": {
+      "src": "android"
+    }
+  }
+
+  

@@ -1,0 +1,186 @@
+.calendar-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1200px;
+  overflow-y: auto;
+}
+
+.calendar-header {
+  background-color: var(--bg-component-header);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.calendar-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+.calendar-table th,
+.calendar-table td {
+  width: 14.28%;
+  text-align: center;
+  vertical-align: middle;
+  height: calc(100% / 6); 
+  padding: 6px;
+}
+
+.calendar-table th {
+  background-color: var(--bg-page-header);
+  font-weight: 500;
+  padding: 8px;
+  border-bottom: 1px solid var(--border-color);
+  letter-spacing: 1.5px;
+  color: var(--header-text);
+}
+.calendar-table td {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: 1px solid #E4E4E7;
+
+  padding: 10px 6px;
+}
+.day-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.day-number {
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+.day-icon {
+  font-size: 1.2em;
+}
+.fish-icon {
+  font-size: 1.2em;
+  margin-bottom: 0.2rem;
+}
+.fish-icon.green {
+  color: #4caf50;
+}
+.fish-icon.orange {
+  color: #ffa000;
+}
+.fish-icon.red {
+  color: #f44336;
+}
+
+/* Päivien taustat */
+
+.monthDay {
+  background-color: var(--light-surface);
+}
+.prevMonthDay,
+.nextMonthDay {
+  color: var(--gray-light);
+  background-color: var(--bg-dark);
+}
+.calendar-table td.currentDay {
+  background-color: var(--bg-accordion-header);
+}
+.calendar-table td.currentDay .day-number{
+  color: #000;
+}
+.disabled {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+/* Napit */
+
+.button {
+  border: none;
+  background-color: var(--header-bg);
+}
+
+.buttonIcon {
+  font-size: 2em;
+  color: var(--header-text);
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out infinite alternate;
+}
+@keyframes shake {
+  from {
+    transform: translateX(-1px);
+  }
+  to {
+    transform: translateX(1px);
+  }
+}
+
+/* === 🌙 DARK MODE override styles === */
+body.dark .calendar-container {
+  background-color: #1e1e1e;
+}
+body.dark .calendar-header {
+  background-color: var(--bg-component-header);
+  color: var(--text-color);
+}
+body.dark .calendar-table th {
+  background-color: var(--bg-accordion-header);
+  color: var(--text-color);
+}
+body.dark .calendar-table td {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  border-bottom: 1px solid #6B7280;
+}
+body.dark .monthDay {
+  background-color: var(--bg-color);
+}
+body.dark .prevMonthDay,
+body.dark .nextMonthDay {
+  background-color: var(--secondary-gray);
+}
+body.dark .day-number {
+  color: var(--text-color);
+}
+body.dark .calendar-table td.currentDay{
+  background-color: var(--bg-background); 
+}
+body.dark .currentDay .day-number{
+  color: #fff;
+}
+body.dark .button {
+  background-color: var(--bg-color);
+}
+body.dark .buttonIcon {
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .calendar-header {
+    padding: 0 1rem;
+  }
+  .calendar-header .dateText{
+    font-size: 0.9em;
+  }
+  .calendar-header .button{
+    font-size: 0.5em;
+  }
+  .calendar-table th,
+  .calendar-table td {
+    padding: 4px;
+  }
+  .calendar-table th {
+    font-size: 0.7em;
+  }
+  .day-icon {
+    font-size: 0.8em;
+  }
+  .day-number {
+    font-size: 0.75em;
+  }
+}

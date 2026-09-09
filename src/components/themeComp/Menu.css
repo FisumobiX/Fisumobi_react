@@ -1,0 +1,143 @@
+ion-menu.md ion-content {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 30px;
+  --padding-bottom: 20px;
+}
+
+ion-menu.md ion-list {
+  padding: 20px 10px;
+}
+
+ion-menu.md ion-list#inbox-list {
+  /* border-bottom: 1px solid var(--ion-background-color-step-150, #d7d8da); */
+  background: #DCDCDC;
+  border: none; /*poistaa alhaalta*/
+}
+
+ion-menu.md ion-list#inbox-list ion-list-header {/*otsikko*/
+  font-size: 20px;
+  font-weight: 600;
+  /* background: var(--bg-page-header); */
+}
+
+
+ion-menu.md ion-list#labels-list ion-list-header {
+  font-size: 16px;
+  margin-bottom: -8px;
+  min-height: 26px;
+}
+
+ion-menu.md ion-item {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  border-radius: 4px;
+  border: 1px solid #d7d8da;
+  --background: #DCDCDC;
+  --color: var(--text-color);
+}
+
+ion-menu.md ion-item.selected {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+ion-menu.md ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-item.selected {
+  --color: var(--ion-color-primary);
+}
+ion-menu.md ion-item ion-icon {
+  color: #616e7e;
+}
+
+ion-menu.md ion-item ion-label {
+  font-weight: 500;
+}
+
+ion-menu.md .custom-SubmenuList{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #E8E8E8;
+}
+
+.custom-SubIonAccordion{
+  background: #d1d5db;
+}
+
+.item-inner{
+    --border:none;
+}
+/*DARKMODE*/
+body.dark ion-menu ion-content {
+  --background: var(--ion-item-background, var(--primary, #fff));
+}
+body.dark ion-menu.md ion-list#inbox-list {
+  /* border-bottom: 1px solid var(--ion-background-color-step-150, #d7d8da); */
+  background: var(--bg-page-header);
+}
+ion-menu.md ion-list#inbox-list ion-list-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+body.dark ion-menu.md ion-item {
+  border: 1px solid var(--border-color);
+  --background: var(--bg-component-header);
+}
+
+body.dark ion-menu.md ion-item.selected {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+body.dark ion-menu.md ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+body.dark ion-menu.md .custom-SubmenuList{
+  background: var(--bg-accordion-header);
+}
+
+body.dark .custom-SubIonAccordion{
+  background: #333c4d;
+}
+
+
+/*Varoitus linkit jos wlan ei ole päällä*/
+
+
+ion-item.is-disabled {
+  --color: var(--ion-color-danger);
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+ion-item.is-disabled * {
+  color: var(--ion-color-danger) !important;
+  fill: var(--ion-color-danger) !important;
+}
+
+/* Ikoni perii värin automaattisesti */
+ion-item.is-disabled .menu-item-icon,
+ion-item.is-disabled .map-item-icon {
+  color: var(--ion-color-danger);
+}
+
+/* Teksti perii värin automaattisesti */
+ion-item.is-disabled ion-label {
+  color: var(--ion-color-danger);
+}
+
+/* Pieni lisäteksti */
+.requires-net {
+  font-size: 0.7em;
+  margin-left: 8px;
+}
+
+
+
+
+
+
+
