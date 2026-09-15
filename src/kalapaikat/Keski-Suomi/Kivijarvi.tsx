@@ -35,83 +35,106 @@ const Kalapaikka: React.FC = () => {
             Kinnulan kunnan länsipuolella sijaitseva Salamajärven kansallispuisto, jossa on metsähallituksen erityiskalastuskohteita.
             </p>
             <p>
-              Jokikalastuskohteita ovat Hilmonjoki ja Myllyjoki.
+              Jokikalastuskohde Hilmonjoki.
             </p>
         </div>
         <p>
-          <strong>Kivijärvi</strong><br/>
+          <h4>Kivijärvi</h4>
         Saarensalmesta pohjoiseen Kivijärven vesi on humuspitoisempaa ja tummempaa. Pohjoispuolella on Kuhasaaliit suurempia. Taimen viihtyy paremmin järven eteläosien selänteillä ja niiden laidoilla.
-        </p>
-        <p>
-        
-        </p>
-        <p>
-            <Link to={`/map/Kalakartta?lat=${63.14121328850435}&lng=${25.17624067991607}&zoom=11`}>  
-            <FaMap color='#4cd964'/>&nbsp;  Näytä kartalla
-            </Link>
         </p>
         <p>
             Kivijärvessä voi vetouistella 10 vavalla/venekunta sekä Kivijärven kalastusalueen luvalla että
             laajemmalla <strong>Pohjoisen Keski-Suomen yhteisvieheluvalla</strong>.
         </p>
         <p>
-              <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
-              <span className='links'
+          Samoilla luvilla on oikeus kalastaa myös alueen muilla järvillä mm. Vuosjärvellä kts. alla linkki Kivijärven kalastalousalue.
+        </p>
+        <p>
+            <Link to={`/map/Kalakartta?lat=${63.14121328850435}&lng=${25.17624067991607}&zoom=11`}>  
+            <FaMap color='#4cd964'/>&nbsp;  Näytä kartalla
+            </Link>
+        </p>
+
+        <p>
+          <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
+            <span className='links'
                 onClick={() => openLink('https://kivijarvenkta.fi/kalastusluvat/')}
               >
                 Kivijärven kalastalousalue
-             </span>
+            </span>
         </p>
         <p>
-              <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
-              <span className='links'
+          <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
+            <span className='links'
                 onClick={() => openLink('https://kskalatalouskeskus.fi/wp-content/uploads/2025/04/KSkalastuspaikkaopas-2025.pdf')}
               >
                 Keski-Suomen kalapaikkaopas
-             </span>
-        </p>
-        
-        <p>
-        Koskikalastuskohde Saaninjoki Pihtiputaan kylän tuntumassa, jossa saaliina mm. taimen ja harjus.
-        </p>
-        <p>
-            <Link to={`/map/Kalakartta?lat=${63.385382212745405}&lng=${25.582309773717135}&zoom=12`}>  
-            <FaMap color='#4cd964'/>&nbsp;  Näytä kartalla 
-            </Link>
-        </p>
-        <p>
-            <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
-            <span className='links'
-            onClick={() => openLink('https://pihtiputaankta.fi/pihtiputaan-osakaskunta/')}
-            >
-            Pihtiputaankalastalousalue
             </span>
         </p>
-
-        
         <p>
-                Metsähallituksen kalavedet:
-            </p>
+        <h4>Jokikalastuskohteet</h4>
+        </p>
+        <strong>Hilmonjoki</strong> (tunnetaan myös nimellä Hilmonkoski) on Keski-Suomen Kannonkoskella, Vuosjärveen laskeva suosittu koskikalastuskohde. Kosken pituus on noin 3 kilometriä. Joessa kalastetaan luontaisesti esiintyvää harjusta ja haukea sekä istutettua järvitaimenta.
+        <p>
+          <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
+            <span className='links'
+                onClick={() => openLink('https://www.hilmonkoski.fi/')}
+              >
+                Hilmonkoski
+            </span>
+            {' '}ja{' '}
+            <span className='links'
+                onClick={() => openLink('https://kannonkoski.fi/hilmonkoski')}
+              >
+                Kannonkosken kunta
+            </span>
+        </p>
+        <p>
+        <h4>Erityiskalastuskohteet</h4>
+        </p>
+        <p>
+        Iso Koirajärvi Salamajärven kansallispuistossa on erämainen, luonnonkaunis järvi (erälupa 6566). Järven rannalla on Koirasalmen luontotupa, josta voi vuokrata mm. veneen. Järven luontaiset kalalajit ovat hauki ja ahven, istutettuina järvitaimen ja siika.
+        </p>
+        <p>
+        Tälle Metsähallituksen vapalupa-alueelle on tarjolla myös Koirajärvi–Heikinlampi-yhdistelmälupa, jolla Heikinlammessa on mahdollisuus kalastaa kirjolohta.
+        </p>
+        <p>
+          <strong>Infoa</strong>:{' '}
+            <span className='links'
+                onClick={() => openLink('https://koirasalmi.com/')}
+              >
+                Koirasalami
+            </span>
+        </p>
+        <p>
+        <hr/>
+        <br/>
+
+          <strong>Palvelut</strong>: Maksuton matkaparkki Kivijärvellä 1.5 – 31.10. Matkailuauto/vaunu ja telttapaikat. Tilaa noin 15 autolle ja vaunulle. Vesipiste, ajokaivo ja ilmainen sähkö.
+                    Paikalla on sähköautoille 11kW laturi.<br/>
+                    Peltokankaantie 75, 43800 Kivijärvi
+        </p>
+
+
+        <p>
+              Metsähallituksen kalavedet:
+        </p>
             Koskikalastukseen Kolima-Keitele-Koskireitti (erälupa 6576) - lupa, jossa kalastupaikkoina Kärnän-, Kellan,- ja Kymönkoski.
           <p>
            Perhokalastukseen Keihärinkoski (erälupa 6586).
           </p>
           <p>
-          Istutusvesi ovat Koirajärvet (erälupa 6566), joihin on istutetaan taimenta ja siikaa. Kaunislampi (erälupa 6567) johon istutetaan kirjolohta.
+          Kaunislampi (erälupa 6567) johon istutetaan kirjolohta.
           </p>
      
 
          <div className="kalapaikkaKuva">
             <img
-              src="./images/kalapaikkakuvat/kesa/uistelijat.png"
+              src="./images/kalapaikkakuvat/kesa/uistelu5.png"
               className="imgKalastuspaikka"
               alt="hauki"
             />
           </div> 
-
-          <p>
-          <strong>Palvelut</strong>: Vojakkalan veneranta: wc ja grillikatos.  Sähkönokan venevalkama: nuotiopaikka ja wc 
-          </p>
         </article>
       </MainLayout>
     );

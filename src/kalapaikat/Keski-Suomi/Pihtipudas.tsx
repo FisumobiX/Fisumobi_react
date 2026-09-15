@@ -63,7 +63,7 @@ const Kalapaikka: React.FC = () => {
             <span className='links'
             onClick={() => openLink('https://pihtiputaankta.fi/pihtiputaan-osakaskunta/')}
             >
-            Pihtiputaan kalastalousalue
+            Pihtiputaan kalatalousalue
             </span>
         </p>
 

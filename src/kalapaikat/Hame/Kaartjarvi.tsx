@@ -41,7 +41,7 @@ const Kalapaikka: React.FC = () => {
           <strong>Kalastuskohdelaji</strong>: hauki, ahven.
           </p>
           <p>
-          <strong>Palvelut</strong>: Vojakkalan veneranta: wc ja grillikatos.  Sähkönokan venevalkama: nuotiopaikka ja wc 
+          <strong>Palvelut</strong>: Vojakkalan veneranta: wc ja grillikatos. Sähkönokan venevalkama: nuotiopaikka ja wc 
           </p>
           <p>
           <strong>Pysäköinti</strong>: Sähkönokan venevalkama jossa on sorastettu laskupaikka (Räyskäläntie 682, 12920 Topeno). 
