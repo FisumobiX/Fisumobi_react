@@ -16,8 +16,8 @@ const KeskiSuomiComp: React.FC = () => {
         <IonItem button routerLink="/saarijarvi" detail lines="none">
           <IonLabel>Saarijärven alue</IonLabel>
         </IonItem>
-        <IonItem button routerLink="/konkameno" detail lines="none">
-          <IonLabel>Könkämäeno</IonLabel>
+        <IonItem button routerLink="/pohjois-keitele" detail lines="none">
+          <IonLabel>Pohjois-Keitele</IonLabel>
         </IonItem>
         <IonItem detail lines="none">
           <IonLabel>Pac-Man</IonLabel>

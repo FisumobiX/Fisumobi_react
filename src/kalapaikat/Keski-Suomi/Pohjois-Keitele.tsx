@@ -25,7 +25,7 @@ const Kalapaikka: React.FC = () => {
   );
   
     return (
-      <MainLayout title="Fisumobi" pagetitle={<span style={{ fontSize: '0.9rem', color: '#007aff', letterSpacing: '2px', fontStyle: 'italic' }}> - Kivijärvi</span>} footer={footer}>
+      <MainLayout title="Fisumobi" pagetitle={<span style={{ fontSize: '0.9rem', color: '#007aff', letterSpacing: '2px', fontStyle: 'italic' }}> - Pohjois-Keitele</span>} footer={footer}>
        <article className="articleText"> 
         <div className="textIntroduction">
             <p>

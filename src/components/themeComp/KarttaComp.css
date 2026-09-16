@@ -177,7 +177,7 @@
 
 
 /*LEAFT TYYLIT*/ 
-#leaftmap-container {
+/* #leaftmap-container {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -193,6 +193,20 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+} */
+
+#leaftmap-container {
+  height: 100%; /* Käytä 100% sen sijaan, että määrittelisit kiinteää korkeutta */
+  width: 100%;
+  /* Varmista, ettei containerissa ole paddingia, joka voisi rikkoa kartan */
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Estää kartan aiheuttaman scrollin */
+}
+
+#leaft-map {
+  height: 100%;
+  width: 100%;
 }
 
 .leaflet-container {
@@ -203,7 +217,7 @@
 
 .leaflet-control-attribution {
 
-    bottom: 160px !important;  
+    bottom: 360px !important;  
     right: 10px;
     z-index: 1000;
 }

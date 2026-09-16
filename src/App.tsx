@@ -27,6 +27,7 @@ import KeskiSuomi from './pages/Keski-Suomi';
 import Pihtipudas from './kalapaikat/Keski-Suomi/Pihtipudas';
 import Kivijarvi from './kalapaikat/Keski-Suomi/Kivijarvi';
 import Saarijarvi from './kalapaikat/Keski-Suomi/Saarijarvi';
+import PohjoisKeitele from './kalapaikat/Keski-Suomi/Pohjois-Keitele';
 
 
 import Satakunta from './pages/Satakunta';
@@ -182,6 +183,7 @@ const RouteGuard: React.FC = () => {
             <Route path="/Pihtipudas" exact component={Pihtipudas} />
             <Route path="/Kivijarvi" exact component={Kivijarvi} /> 
             <Route path="/Saarijarvi" exact component={Saarijarvi} /> 
+            <Route path="/Pohjois-Keitele" exact component={PohjoisKeitele} /> 
             
             <Route path="/place/Satakunta" exact component={Satakunta} />
             <Route path="/Siuronkoski" exact component={Siuronkoski} />  

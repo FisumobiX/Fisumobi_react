@@ -26,13 +26,13 @@ L.Icon.Default.mergeOptions({
 // 🎨 VOIT MUUTTAA KLUSTEREIDEN VÄREJÄ TÄSTÄ:
 const CLUSTER_COLORS = {
   vene: {
-    bg: 'rgba(33, 150, 243, 0.4)',      // Ulompi haalea rengas
-    inner: 'rgba(33, 150, 243, 0.8)',   // Sisempi pallo
+    bg: '#383838',      // Ulompi haalea rengas
+    inner: '#696969',   // Sisempi pallo
     text: '#ffffff'                     // Tekstin väri numerolle
   },
   kala: {
-    bg: 'rgba(255, 0, 0, 0.4)',         // Ulompi haalea rengas
-    inner: 'rgba(255, 0, 0, 0.8)',      // Sisempi pallo
+    bg: '#0096FF',         // Ulompi haalea rengas
+    inner: '#0000FF',      // Sisempi pallo
     text: '#ffffff'                     // Tekstin väri numerolle
   }
 };
@@ -142,7 +142,7 @@ export default function KarttaComp() {
       });
 
       kalapaikat.forEach(loc => {
-        const marker = L.marker([loc.lat, loc.lng], { icon: makeIcon('#FF0000') })
+        const marker = L.marker([loc.lat, loc.lng], { icon: makeIcon('#0000FF') })
           .bindPopup(`<b>${loc.paikka}</b><br>Kalastuskohdelaji: ${loc.lajit}<br><a href="${loc.url}">Avaa sivu</a>`);
         
         kalaClusterGroup.addLayer(marker);
@@ -162,7 +162,7 @@ export default function KarttaComp() {
 
       veneenlaskupaikat.forEach(loc => {
         const marker = L.marker([loc.lat, loc.lng], {
-          icon: makeIcon('#2196f3')
+          icon: makeIcon('#383838')
         }).bindPopup(
           `<b>${loc.paikka}</b><br>Luiskantyyppi: ${loc.luiskantyyppi}`
         );
@@ -191,8 +191,10 @@ export default function KarttaComp() {
 
 
   return (
-    <div id="leaftmap-container" style={{ position: 'relative', width: '100%', height: '100vh' }}>
-      <div id="leaft-map" ref={mapRef} style={{ width: '100%', height: '100%' }} />
+    // <div id="leaftmap-container" style={{ position: 'relative', width: '100%', height: '100vh' }}>
+    //   <div id="leaft-map" ref={mapRef} style={{ width: '100%', height: '100%' }} />
+    <div id="leaftmap-container" >
+    <div id="leaft-map" ref={mapRef} />
       
       {/* Paikannuspainike */}
       <button
@@ -212,7 +214,7 @@ export default function KarttaComp() {
         }}
         style={{
           position: 'absolute',
-          top: '10px',
+          top: '65px',
           right: '10px',
           zIndex: 1000,
           background: '#ffffff',
@@ -244,7 +246,7 @@ export default function KarttaComp() {
         title="Veneenlaskupaikat"
         style={{
           position: 'absolute',
-          top: '55px',
+          top: '105px',
           right: '10px',
           zIndex: 1000,
           background: boatPlacesOpen ? '#2196f3' : '#ffffff',
@@ -264,7 +266,7 @@ export default function KarttaComp() {
         onClick={() => setAttributionOpen(prev => !prev)}
         style={{
           position: 'absolute',
-          bottom: '10px',
+          bottom: '65px',
           right: '10px',
           zIndex: 1000,
           borderRadius: '6px',
@@ -285,7 +287,7 @@ export default function KarttaComp() {
         <div
           style={{
             position: 'absolute',
-            bottom: '0px',
+            bottom: '65px',
             right: '45px',
             background: '#ffffff',
             color: '#222',
@@ -297,7 +299,25 @@ export default function KarttaComp() {
             fontSize: '14px'
           }}
         >
-          Esitetyt paikat
+                  <button
+            onClick={() => setAttributionOpen(false)}
+            style={{
+              float: 'right',
+              border: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+              color: '#444',
+              fontSize: '14px'
+            }}
+          >
+            ✕
+          </button>
+          <div>
+            <b>Selite:</b><br />
+            Kalastuspaikka <FaMapPin size={15} color="#0000FF" /><br />
+            Veneenlaskupaikka <FaMapPin size={15} color="#383838" /><br />
+            <small>&copy; OpenStreetMap contributors<br /> &copy; OpenTopoMap</small>
+          </div>
         </div>
       )}
     </div>
