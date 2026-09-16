@@ -21,8 +21,8 @@ export const veneenlaskupaikat: Location[] = [
   },
   {
     paikka: 'Könkämäeno, Pätikkä',
-    lat: 68.75227,  
-    lng: 21.40703,
+    lat: 68.623312, 
+    lng:  21.713126,
     luiskantyyppi:''
   },
   //Muonionjoki
@@ -44,6 +44,31 @@ export const veneenlaskupaikat: Location[] = [
     lat: 68.75746,  
     lng: 27.45969,
     luiskantyyppi:''
+  },
+  //Kuusamo
+  {
+    paikka: "Jäkälämutkantie/Jäkälämutkanlampi, Kuusamo",
+    lat: 66.2955273358234,
+    lng: 29.6295945266381,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Kemijärventie, Kuusamo",
+    lat: 66.2567629394693,
+    lng: 29.0684445505883,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Liikasenvaarantie 150, Kuusamo",
+    lat: 66.3704731673104,
+    lng: 29.3362505861424,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Nurmisaarenniemi, Kuusamo",
+    lat: 66.3500673541947,
+    lng: 29.4558690650611,
+    luiskantyyppi: ""
   },
   //Keski-Suomi
   //Saarikoski
@@ -106,12 +131,6 @@ export const veneenlaskupaikat: Location[] = [
     luiskantyyppi:'venesatama/vierasvenepaikkoja'
   },
 //Pihtipudas
-{
-  paikka: 'Mainlahdentie 55, 44800 Pihtipudas',
-  lat: 63.38091777614846,  
-  lng: 25.543820180133643,
-  luiskantyyppi:'venesatama/betoniluiska'
-},
 {
   paikka: 'Ukonniementie 101, 44800 Pihtipudas',
   lat: 63.30975956977927,  
@@ -181,19 +200,24 @@ export const veneenlaskupaikat: Location[] = [
   luiskantyyppi:'Neiturin laavun veneluiska'
 },
 {
-  paikka: 'Hietarannantie 91, 72350 Vesanto',
-  lat: 62.865488230251074,  
-  lng: 26.237634905502812,
-  luiskantyyppi:'venesatama/vierasvenepaikkoja'
-},
-{
   paikka: 'Pyhälahti satama, Pyhälahdentie 951, 44370 Konnevesi',
   lat: 62.80794993936829,  
   lng: 26.093883681407483,
   luiskantyyppi:'venesatama/vierasvenepaikkoja'
 },
+{
+  paikka: "Hankasalmentie 453, Konnevesi",
+  lat: 62.5658414094133,
+  lng: 26.2441412051495,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Satamatie 60, Konnevesi",
+  lat: 62.6256325778958,
+  lng: 26.3441715287627,
+  luiskantyyppi: ""
+},
 //Äänekoski
-
 {
   paikka: 'Konginkankaan satama, 44400 Äänekoski',
   lat: 62.78297869821481,  
@@ -207,22 +231,10 @@ export const veneenlaskupaikat: Location[] = [
   luiskantyyppi:'venesatama/betoniluiska'
 },
 {
-  paikka: 'Sumiaisraitti 51, 44280 Äänekoski',
-  lat: 62.66282952461134,  
-  lng: 26.04461638094837,
-  luiskantyyppi:'venesatama/betoniluiska'
-},
-{
   paikka: 'Härkinsalmen venelaituri, Härkinsalmentie 50, 44260 Vihijärvi',
   lat: 62.67703814754729,  
   lng: 25.93077089835401,
   luiskantyyppi:'venesatama/vierasvenepaikkoja'
-},
-{
-  paikka: 'Halmevalkamantie 96, 44200 Äänekoski',
-  lat: 62.61869615290057,  
-  lng: 25.799136731998722,
-  luiskantyyppi:'venesatama'
 },
 {
   paikka: 'Halmevalkamantie 96, 44200 Äänekoski',
@@ -248,36 +260,219 @@ export const veneenlaskupaikat: Location[] = [
   lng: 25.82095965725657,
   luiskantyyppi:''
 },
+{
+  paikka: 'Huutoniementie 17, 44190 Äänekoski',
+  lat: 62.6435,  
+  lng: 25.5134,
+  luiskantyyppi:'venesatama'
+},
+//Muurame
+{
+  paikka: "Jaakkolantie, Muurame",
+  lat: 62.1232239650068,
+  lng: 25.6833708958611,
+  luiskantyyppi: ""
+},
+//Jämsä
+{
+  paikka: "Oinaalantie 41B, Jämsä",
+  lat: 61.9305250748395,
+  lng: 25.162201590408,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Pajulahdentie 240, Jämsä",
+  lat: 61.7839895835978,
+  lng: 25.4201474148611,
+  luiskantyyppi: ""
+},
+//Hankasalmi
+{
+  paikka: "Kirkkorannantie, Hankasalmi",
+  lat: 62.3817598990281,
+  lng: 26.4268227670621,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Konnevedentie, Hankasalmi",
+  lat: 62.5651782286107,
+  lng: 26.2444679575648,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Pynnönniementie, Hankasalmi",
+  lat: 62.4394286643915,
+  lng: 26.5246315696473,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Saksalansaarentie 155, Hankasalmi",
+  lat: 62.5252083600177,
+  lng: 26.2189702278006,
+  luiskantyyppi: ""
+},
+//Pohjois-Savo
+{
+  paikka: "Ouluntie 1992, Vieremä",
+  lat: 63.7392471446185,
+  lng: 26.989210161868,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Harjulantie 4, Kaavi",
+  lat: 62.969543909764,
+  lng: 28.4934717601442,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Pisamaniementie, Varkaus",
+  lat: 62.2918544018465,
+  lng: 28.2632057632234,
+  luiskantyyppi: ""
+},
+//Etelä-Savo
+{
+  paikka: "Niemeläntie 288, Hirvensalmi",
+  lat: 61.726795535293,
+  lng: 26.6934245474643,
+  luiskantyyppi: ""
+},
 
+{
+  paikka: "Hiekkarannantie, Mikkeli",
+  lat: 62.0170248121614,
+  lng: 27.1958093729882,
+  luiskantyyppi: ""
+},
+//Pohjois-Karjala
+{
+  paikka: "Kivilahdentie 155 /Hiiskoski, Ilomantsi",
+  lat: 62.8558852459733,
+  lng: 30.6372813600881,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Koulurannantie 3, Ilomantsi",
+  lat: 62.6403435009199,
+  lng: 31.2825491674336,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Oravaarantie 510, Tohmajärvi",
+  lat: 62.190407671897,
+  lng: 30.3668602864269,
+  luiskantyyppi: ""
+},
+//Pirkanmaa
+{
+  paikka: "Kirkkoveräjäntie, Pirkkala",
+  lat: 61.4749252309222,
+  lng: 23.6795487477071,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Kankahuventie, Pälkäne",
+  lat: 61.3529729198707,
+  lng: 24.473745357917,
+  luiskantyyppi: ""
+},
+//Päijät-Häme
 
-
-
-
-
-
-
-
-
-
-
-  //Äänekoski
-  {
-    paikka: 'Huutoniementie 17, 44190 Äänekoski',
-    lat: 62.6435,  
-    lng: 25.5134,
-    luiskantyyppi:'venesatama'
-  },
-
+{
+  paikka: "Messilän venesatama",
+  lat: 61.020203997904126, 
+  lng: 25.56189617744653,
+  luiskantyyppi: "Venesatama/betoni"
+},
+{
+  paikka: "Aurinkorannantie, Hartola",
+  lat: 61.5676114658456,
+  lng: 26.0471575658765,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Niemistenseläntie, Hartola",
+  lat: 61.657912476078,
+  lng: 26.0750680413019,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Visainlahdentie, Hartola",
+  lat: 61.5886009416777,
+  lng: 26.0495639698299,
+  luiskantyyppi: ""
+},
+//Suomenlahti
+{
+  paikka: "Ehrenströmintie 1a, Helsinki",
+  lat: 60.1547927959656,
+  lng: 24.952456175706,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Eläintarhantie 10, Helsinki",
+  lat: 60.1800021223212,
+  lng: 24.941774509871,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Isonsarvastontie 3, Helsinki",
+  lat: 60.1671554359257,
+  lng: 25.0587102768368,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Laivastokatu 3, Helsinki",
+  lat: 60.1696400964007,
+  lng: 24.9657634439338,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Marjaniemenranta 1a, Helsinki",
+  lat: 60.200780732634,
+  lng: 25.0977220268649,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Merenkulkijankuja 7, Helsinki",
+  lat: 60.2100423119052,
+  lng: 25.1862265480815,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Mustikkamaantie 1, Helsinki",
+  lat: 60.1824768531644,
+  lng: 24.9945721941033,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Niittyranta 21b, Helsinki",
+  lat: 60.2048921240586,
+  lng: 25.0979396876294,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Mellstenintie 6, Espoo",
+  lat: 60.1559107083956,
+  lng: 24.7717971863576,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Ruukinrannantie 29, Espoo",
+  lat: 60.2031118334012,
+  lng: 24.8293942857947,
+  luiskantyyppi: ""
+},
+{
+  paikka: 'Padvantie 1567, Raasepori',
+  lat: 60.02012673621459, 
+  lng: 22.820398521151443,
+  luiskantyyppi:'venesatama/betoniluiska'
+},
 
 
 
   //Norja
-  {
-    paikka: 'Gaskajävri <br />Huom. tunturitien käyttö sallittu ajalla 16.6. - 30.9.<br />',
-    lat: 69.76468,  
-    lng: 23.84773,
-    luiskantyyppi:''
-  },
   {
     paikka: 'Gaskajävri <br />Huom. tunturitien käyttö sallittu ajalla 16.6. - 30.9.<br />',
     lat: 69.76468,  

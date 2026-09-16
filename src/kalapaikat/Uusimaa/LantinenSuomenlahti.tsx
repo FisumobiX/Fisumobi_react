@@ -117,13 +117,6 @@ const Kalapaikka: React.FC = () => {
               Mantereeseen työntyvät sisälahdet ovat kuha, hauki ja ahvenpaikkoja, kuten myös Bromarvin pohjois-, itä- ja eteläranta. Bromarvin itä- ja eteläpuolella, mutta varsinkin pohjoispuolella on syvää vettä, joissa vertikaalijigaaminenkin onnistuu. Bromarvin eteläpuoli on enemmän karien ja saarten rikkomaa. Bromarvinin ulkomerenpuoleinen länsipuoli on ulkomeren kaltainen karu ja siellä viihtyvät meritaimen ja siika.
               </p>
               <p><strong>Rannalta kalastuspaikkoja</strong></p>
-              <p>
-              <strong>Padva</strong><br/>
-              Fallnäsuddenissa on vajaa kilometri asumatonta, karua kivikkoista meritaimen rantaa. Muita saalislajeja ahven ja hauki. 
-              </p>
-              <p>
-               Pysäköinti ja kulku: Navigaattoriin Padvantie 1565, Raasepori. Sataman parkkipaikkaa voi käyttää pysäköintiin. Satamasta noin 150 m tieltä lähtee polku, mikä kiertää Fallnäsuddenniemen toiselle puolen. Kävelymatka noin 700 m. 
-              </p>
              <p><strong>Stagsundet/Gennarbyviken välinen kannas.</strong><br/>
              Kannaksella ja sen molemmin puolin ei ole asutusta. Ahvenen, hauen ja kuhan kalastukseen sovelias paikka. Gennarbyvikenin puolella makeaa vettä ja isoja kuhia ja ankeriaita.
                 Padon molemminpuolin on 100m kalastuksenkieltoalue. 

@@ -1,4 +1,4 @@
-import MaastokartatComp from '../components/MastokarttaComp';
+import MaastokartatComp from '../components/MaastokarttaComp';
 import MainLayout from '../components/MainLayoutComp';
 import React, { useCallback } from 'react';
 import Footer from "./Footer";
