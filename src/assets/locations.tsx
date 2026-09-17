@@ -15,6 +15,13 @@ export const kalapaikat: Location[] = [
     url:'../inarijoki'
   },
   {
+    paikka: 'Inarijoki/Kietsimäjoki',
+    lat: 68.89514112131512,
+    lng: 25.62738548814221,
+    lajit: 'kyttyrälohi, harjus ja taimen ',
+    url:'../inarijoki'
+  },
+  {
     paikka: 'Könkämäeno, alaosa',
     lat: 68.474919,
     lng: 22.125196,
@@ -37,8 +44,8 @@ export const kalapaikat: Location[] = [
   },
   {
     paikka: 'Muonionjoki, Äijäkoski',
-    lat: 69.292716, 
-    lng: 25.745559,
+    lat: 67.90463673364084, 
+    lng: 23.603133559536765,
     lajit: 'harjus ja lohi',
     url:''
   },
@@ -48,13 +55,6 @@ export const kalapaikat: Location[] = [
     lng: 23.636125,
     lajit: 'kirjolohi',
     url:''
-  },
-  {
-    paikka: 'Inarijoki',
-    lat: 69.292716, 
-    lng: 25.745559,
-    lajit: 'kyttyrälohi, harjus ja taimen ',
-    url:'../inarijoki'
   },
   {
     paikka: 'Paistunturin erämaa-alue',
@@ -614,15 +614,6 @@ export const kalapaikat: Location[] = [
   },
 ];
 
-export const istaripaikat: Location[] = [
-  {
-    paikka: 'Muonio, Pieni Harjujärvi',
-    lat: 67.799995, 
-    lng: 23.636125,
-    lajit: 'taimen ja kirjolohi',
-    url:''
-  },
-];
 
 //Esteettömät 
 //Muonio, Pieni Harjujärvi

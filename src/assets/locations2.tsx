@@ -8,6 +8,37 @@ export type Location = {
 export const veneenlaskupaikat: Location[] = [
   //Lappi ja Norja
   {
+    paikka: "Gaskajävri - tunturitien käyttö sallittu ajalla 16.6. - 30.9.<br />Paikalla osittainen pysäköintikielto. Katso ohjeet paikalla.",
+    lat: 69.76468, 
+    lng: 23.84773,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Talvik – kylän rannassa laiturin vieressä",
+    lat: 70.04251,
+    lng: 22.95367,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Sörstaraumen",
+    lat: 69.84297,
+    lng: 21.87419,
+    luiskantyyppi: ""
+  },
+  {
+    paikka: "Yykeänperä/Skibotn - maksullinen? Laiturilla olevan infon sähköpostiin maksusta ei vastattu",
+    lat: 69.39432427405744, 
+    lng: 20.267288761830137,
+    luiskantyyppi: "betoni"
+  },
+ 
+  {
+    paikka: "Inarijärvi/Ukonlahti",
+    lat: 68.75746,
+    lng: 27.45969,
+    luiskantyyppi: ""
+  },
+  {
     paikka: 'Könkämäeno, Järämä',
     lat: 68.4823749875361,  
     lng: 22.111800464155817,
@@ -36,13 +67,6 @@ export const veneenlaskupaikat: Location[] = [
     paikka: 'Pahtosensuvanto/Äijäkosken yläpuoli',
     lat: 67.91632711560909,   
     lng: 23.646046203679216,
-    luiskantyyppi:''
-  },
-  //Inari
-  {
-    paikka: 'Inarijärvi/Ukonlahti',
-    lat: 68.75746,  
-    lng: 27.45969,
     luiskantyyppi:''
   },
   //Kuusamo
@@ -404,6 +428,127 @@ export const veneenlaskupaikat: Location[] = [
 },
 //Suomenlahti
 {
+  paikka: "Sarkisalo",
+  lat: 60.0740641,
+  lng: 22.878961,
+  luiskantyyppi: "betoniluiska"
+},
+{
+  paikka: "Bromarv",
+  lat: 59.9883512,
+  lng: 23.0343092,
+  luiskantyyppi: ""
+},
+{
+  paikka: 'Padvantie 1567, Raasepori',
+  lat: 60.02012673621459, 
+  lng: 22.820398521151443,
+  luiskantyyppi:'venesatama/betoniluiska'
+},
+//Uusimaa
+{
+  paikka: "Stagsundet/Gennarbyviken",
+  lat: 59.922789,
+  lng: 23.203305,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Hangonkylän satama",
+  lat: 59.84216779312628, 
+  lng: 22.94817912146712,
+  luiskantyyppi: "betoni"
+},
+{
+  paikka: "Hangon itäsatama",
+  lat: 59.820564,
+  lng: 22.966335,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Tvärminnen satama – Ruukintie 13, Hanko",
+  lat: 59.83929,
+  lng: 23.207301,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Lapppohjan satama – Satamatie 48, Hanko",
+  lat: 59.899016,
+  lng: 23.258294,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Bäggön satama – Bäggöntie 1281, Raasepori",
+  lat: 59.889412,
+  lng: 23.511494,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Sommarö – Sommrönranta 14, Raasepori",
+  lat: 59.899159,
+  lng: 23.41279,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Boxströmmen – Näsedal 38, Raasepori",
+  lat: 59.93853,
+  lng: 23.608844,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Korssundet, Barösundintie 421, Inkoo",
+  lat: 59.992522,
+  lng: 23.848632,
+  luiskantyyppi: "luonnonluiska"
+},
+{
+  paikka: "Barösundin lossiranta, Barösundintie 708, Inkoo",
+  lat: 59.977316,
+  lng: 23.876731,
+  luiskantyyppi: "luonnonluiska"
+},
+{
+  paikka: "Inkoon keskusta – Rantatie 3, Inkoo",
+  lat: 60.04319,
+  lng: 24.007525,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Räfsö – Ålöntie 244, Inkoo",
+  lat: 60.024517,
+  lng: 24.090694,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Sandfjärden, Kopparnäsintie 720, Inkoo",
+  lat: 60.044975,
+  lng: 24.266398,
+  luiskantyyppi: "luonnonluiska"
+},
+{
+  paikka: "Störsvik – Kotilahdentie, 02580 Siuntio",
+  lat: 60.078985,
+  lng: 24.301922,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Kantvik – Hupisaarentie, 02460 Kantvik",
+  lat: 60.085765,
+  lng: 24.382804,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Linlo – Linlontie 114, 02480 Kirkkonummi",
+  lat: 60.032117,
+  lng: 24.422827,
+  luiskantyyppi: ""
+},
+{
+  paikka: "Merikylä/Porkkala Marin – Dragetintie 109, 02480 Kirkkonummi",
+  lat: 59.983714,
+  lng: 24.423537,
+  luiskantyyppi: ""
+},
+{
   paikka: "Ehrenströmintie 1a, Helsinki",
   lat: 60.1547927959656,
   lng: 24.952456175706,
@@ -463,22 +608,7 @@ export const veneenlaskupaikat: Location[] = [
   lng: 24.8293942857947,
   luiskantyyppi: ""
 },
-{
-  paikka: 'Padvantie 1567, Raasepori',
-  lat: 60.02012673621459, 
-  lng: 22.820398521151443,
-  luiskantyyppi:'venesatama/betoniluiska'
-},
 
-
-
-  //Norja
-  {
-    paikka: 'Gaskajävri <br />Huom. tunturitien käyttö sallittu ajalla 16.6. - 30.9.<br />',
-    lat: 69.76468,  
-    lng: 23.84773,
-    luiskantyyppi:''
-  },
 
       
 ];

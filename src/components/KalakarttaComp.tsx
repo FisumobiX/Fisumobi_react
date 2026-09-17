@@ -6,7 +6,7 @@ import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'leaflet.markercluster'; // Aktivoi L.markerClusterGroup lajennuksen
 import './themeComp/KarttaComp.css';
-import { kalapaikat, istaripaikat} from '../assets/locations';
+import { kalapaikat} from '../assets/locations';
 import { veneenlaskupaikat } from '../assets/locations2';
 import { FaMapPin, FaCrosshairs, FaShip  } from 'react-icons/fa';
 import ReactDOMServer from 'react-dom/server';
@@ -137,7 +137,7 @@ export default function KarttaComp() {
       // 🎣 KALASTUSPAIKKOJEN KLUSTERIRYHMÄ
       const kalaClusterGroup = L.markerClusterGroup({
         chunkedLoading: true,
-        maxClusterRadius: 50,
+        maxClusterRadius: 30,
         iconCreateFunction: (cluster) => createClusterIcon(cluster, CLUSTER_COLORS.kala)
       });
 
@@ -180,12 +180,6 @@ export default function KarttaComp() {
       if (veneenlaskupaikat.length > 0) {
         map.fitBounds(bounds, { padding: [50, 50] });
       }
-
-      istaripaikat.forEach(loc =>
-        L.marker([loc.lat, loc.lng], { icon: makeIcon('#9c27b0') })
-          .addTo(map)
-          .bindPopup(`<b>${loc.paikka}</b><br>Kalastuskohdelaji: ${loc.lajit}`)
-      );
     });
   }, [center, initialZoom]);
 
@@ -214,7 +208,7 @@ export default function KarttaComp() {
         }}
         style={{
           position: 'absolute',
-          top: '65px',
+          top: '10px',
           right: '10px',
           zIndex: 1000,
           background: '#ffffff',
@@ -246,7 +240,7 @@ export default function KarttaComp() {
         title="Veneenlaskupaikat"
         style={{
           position: 'absolute',
-          top: '105px',
+          top: '50px',
           right: '10px',
           zIndex: 1000,
           background: boatPlacesOpen ? '#2196f3' : '#ffffff',
@@ -266,7 +260,7 @@ export default function KarttaComp() {
         onClick={() => setAttributionOpen(prev => !prev)}
         style={{
           position: 'absolute',
-          bottom: '65px',
+          bottom: '10px',
           right: '10px',
           zIndex: 1000,
           borderRadius: '6px',
@@ -287,7 +281,7 @@ export default function KarttaComp() {
         <div
           style={{
             position: 'absolute',
-            bottom: '65px',
+            bottom: '10px',
             right: '45px',
             background: '#ffffff',
             color: '#222',
