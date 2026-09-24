@@ -117,7 +117,7 @@ const Kalapaikka: React.FC = () => {
 
 
         <p>
-              Metsähallituksen kalavedet:
+              Metsähallituksen Erälupapalvelun kalavedet:
         </p>
             Koskikalastukseen Kolima-Keitele-Koskireitti (erälupa 6576) - lupa, jossa kalastupaikkoina Kärnän-, Kellan,- ja Kymönkoski.
           <p>

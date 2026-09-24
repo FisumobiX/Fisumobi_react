@@ -28,12 +28,12 @@ const CLUSTER_COLORS = {
   vene: {
     bg: '#383838',      // Ulompi haalea rengas
     inner: '#696969',   // Sisempi pallo
-    text: '#ffffff'                     // Tekstin väri numerolle
+    text: '#ffffff'     // Tekstin väri numerolle
   },
   kala: {
-    bg: '#0096FF',         // Ulompi haalea rengas
-    inner: '#0000FF',      // Sisempi pallo
-    text: '#ffffff'                     // Tekstin väri numerolle
+    bg: '#0096FF',      // Ulompi haalea rengas
+    inner: '#0000FF',    // Sisempi pallo
+    text: '#ffffff'      // Tekstin väri numerolle
   }
 };
 
@@ -177,7 +177,17 @@ export default function KarttaComp() {
         boatClusterGroup.addTo(map);
       }
 
-      if (veneenlaskupaikat.length > 0) {
+      // =====================================================
+      // MUUTOS:
+      // Jos URL:ssa on lat ja lng, EI käytetä fitBoundsia.
+      // Näin URL:n zoom-arvo säilyy.
+      // =====================================================
+      const params = new URLSearchParams(location.search);
+      const hasUrlLocation =
+        params.get('lat') !== null &&
+        params.get('lng') !== null;
+
+      if (veneenlaskupaikat.length > 0 && !hasUrlLocation) {
         map.fitBounds(bounds, { padding: [50, 50] });
       }
     });
@@ -293,7 +303,7 @@ export default function KarttaComp() {
             fontSize: '14px'
           }}
         >
-                  <button
+          <button
             onClick={() => setAttributionOpen(false)}
             style={{
               float: 'right',
@@ -306,6 +316,7 @@ export default function KarttaComp() {
           >
             ✕
           </button>
+
           <div>
             <b>Selite:</b><br />
             Kalastuspaikka <FaMapPin size={15} color="#0000FF" /><br />

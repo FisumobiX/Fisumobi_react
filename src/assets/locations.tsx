@@ -136,7 +136,23 @@ export const kalapaikat: Location[] = [
       lajit: 'harjus, taimen ja hauki',
       url:'../kivijarvi'
     },
+    //Viitasaari
+    {
+      paikka: 'Muuruejärvi',
+      lat: 63.0940991999537, 
+      lng: 25.51324066112611 ,
+      lajit: 'kuha, ahven, hauki ja taimen',
+      url:'../pohjois-keitele'
+    },
+    {
+      paikka: 'Pohjois-Keitele',
+      lat:  63.11766365349322, 
+      lng: 25.674117828698943,
+      lajit: 'kuha, ahven, hauki,taimen ja järvilohi',
+      url:'../pohjois-keitele'
+    },
     
+   
   //Pirkanmaa
   {
     paikka: 'Siuronkoski - Nokia',

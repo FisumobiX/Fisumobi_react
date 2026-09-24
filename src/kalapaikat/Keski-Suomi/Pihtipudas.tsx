@@ -66,20 +66,7 @@ const Kalapaikka: React.FC = () => {
             Pihtiputaan kalatalousalue
             </span>
         </p>
-
-        
-        <p>
-                Metsähallituksen kalavedet:
-            </p>
-            Koskikalastukseen Kolima-Keitele-Koskireitti (erälupa 6576) - lupa, jossa kalastupaikkoina Kärnän-, Kellan,- ja Kymönkoski.
-          <p>
-           Perhokalastukseen Keihärinkoski (erälupa 6586).
-          </p>
-          <p>
-          Istutusvesi ovat Koirajärvet (erälupa 6566), joihin on istutetaan taimenta ja siikaa. Kaunislampi (erälupa 6567) johon istutetaan kirjolohta.
-          </p>
-     
-
+         
          <div className="kalapaikkaKuva">
             <img
               src="./images/kalapaikkakuvat/kesa/uistelijat.png"

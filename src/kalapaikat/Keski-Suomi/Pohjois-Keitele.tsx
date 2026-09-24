@@ -29,32 +29,32 @@ const Kalapaikka: React.FC = () => {
        <article className="articleText"> 
         <div className="textIntroduction">
             <p>
-            Viitasaarenreittiin kuuluva lähes 50 kilometriä pitkä Kivijärvi tarjoaa erinomaiset vapaa-ajankalastusmahdollisuudet. Se tunnetaan nykyisin erityisesti vahvasta ja elinvoimaisesta kuhakannastaan sekä myös taimenistaan. Järvi on varsinkin rannoiltaan nimensä mukaisesti kivinen, mutta pohjanmuodoiltaan vaihteleva, keskisyvyydeltään 8,4 metriä ja syvimmiltään yli 40 metriä. Järven kirkkaat vedet houkuttelevat alueelle niin vetouistelijoita, jigikalastajia kuin talvisia pilkkijöitäkin.
+            Keitele on Kymijoen vesistön suurin ja Keski-Suomen toiseksi suurin järvi. 
+            Alueen lupien piiriin kuuluu myös Muuruejärvi, jonka vedet laskevat Keihärinkosken kautta Ylä-Keiteleeseen
             </p>
             <p>
-            Kinnulan kunnan länsipuolella sijaitseva Salamajärven kansallispuisto, jossa on metsähallituksen erityiskalastuskohteita.
-            </p>
-            <p>
-              Jokikalastuskohde Hilmonjoki.
+              Alueen koskikalastuskohteet ovat Huopanankoski, Kolima–Keitele-koskireitillä Kymönkoski, Kärnänkoski ja Kellankoski vain perhokalastukseen.
             </p>
         </div>
+          <h4>Ylä- ja Keski-Keitele</h4>
+          <p>
+          Ylä-Keiteleen ja Keski-Keiteleen vedet luokitellaan vedenlaadultaan erinomaisiksi ja hyviksi. Ylä-Keiteleen suurinselkä on syvä ja vähäsaarinen Pihkurinselkä, jossa Keiteleen taimen parhaiten viihtyy. Keski-Keiteeleen isoja selkiä ovat Kokon-, Suova- ja Karttuselät, joissa syvänteistä nousee jyrkästi matalikkoja ja karikoita.
+          </p>
+          <p>
+          Ylä- ja Keski-Keiteleen saaliskaloja ovat hauki, kuha, suureksikin kasvavat ahvenet ja suurten selkien taimenet ja järvilohi.
+          </p>
+        <h4>Muuruejärvi</h4>
         <p>
-          <h4>Kivijärvi</h4>
-        Saarensalmesta pohjoiseen Kivijärven vesi on humuspitoisempaa ja tummempaa. Pohjoispuolella on Kuhasaaliit suurempia. Taimen viihtyy paremmin järven eteläosien selänteillä ja niiden laidoilla.
-        </p>
-        <p>
-            Kivijärvessä voi vetouistella 10 vavalla/venekunta sekä Kivijärven kalastusalueen luvalla että
-            laajemmalla <strong>Pohjoisen Keski-Suomen yhteisvieheluvalla</strong>.
-        </p>
-        <p>
-          Samoilla luvilla on oikeus kalastaa myös alueen muilla järvillä mm. Vuosjärvellä kts. alla linkki Kivijärven kalastalousalue.
+          Muuruejärvi on luontaisestilisääntyvän Huopanankosken taimenen syönnösalueita.
         </p>
         <p>
             <Link to={`/map/Kalakartta?lat=${63.14121328850435}&lng=${25.17624067991607}&zoom=11`}>  
             <FaMap color='#4cd964'/>&nbsp;  Näytä kartalla
             </Link>
         </p>
-
+        <p>
+            Alueen järviin on saatavilla eri kalastuslupia: Pohjois-Keiteleen viehekalastusalue lupa, Koko Keiteleen lupa ja Pohjoisen Keski-Suomen yhteisviehelupa.
+            </p>
         <p>
           <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
             <span className='links'
@@ -74,7 +74,24 @@ const Kalapaikka: React.FC = () => {
         <p>
         <h4>Jokikalastuskohteet</h4>
         </p>
-        <strong>Hilmonjoki</strong> (tunnetaan myös nimellä Hilmonkoski) on Keski-Suomen Kannonkoskella, Vuosjärveen laskeva suosittu koskikalastuskohde. Kosken pituus on noin 3 kilometriä. Joessa kalastetaan luontaisesti esiintyvää harjusta ja haukea sekä istutettua järvitaimenta.
+        <strong>Kolima–Keitele-koskireitti</strong>
+        <br/>
+        <p>
+         Koskilla saa kalastaa 6576  eräluvalla. Koskilla on kalastajakiintiöt. Kastuskohteena lajit ahven, harjus, hauki, siika, taimen.
+         </p>
+         <strong>Keihärinkoski</strong>
+         <p>
+          Taimenistaan tunnettu Keihärinkoski Muuruejärven ja Ylä-Keiteleen välissä, jossa kalastus tapahtuu Metsähallituksen Erälupapalvelun 6586 Keihärinkoski -luvalla.
+         </p>
+         <strong>Huopanankoski</strong> 
+         <p>
+         Suomen merkittävimpiä ja tunnetuimpia koskikalastusalueita. Huopanan
+merkitystä nostaa alueen historia, sillä Huopanankoskella perhokalastusta on
+aloitettu harjoittaa jo 1800 -luvun lopulla. Huopanankoski on suomalaisen
+urheilukalastuksen historiasta tunnetuimpia sisävesikohteita. Kirjailija Juhani
+Aho lienee tunnetuimpia koskella kalastaneista ja sai jopa oman
+nimikkokivensä rannalle.
+        </p>    
         <p>
           <strong>Luvat ja kalastusäännöt ym.</strong>:{' '}
             <span className='links'

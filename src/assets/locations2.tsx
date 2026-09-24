@@ -175,6 +175,19 @@ export const veneenlaskupaikat: Location[] = [
 },
 
 //Viitasaari
+
+{
+  paikka: 'Muurueentie 117, 44760 Viitasaari',
+  lat: 63.13567966020309, 
+  lng: 25.4919946391384,
+  luiskantyyppi:'soraluiska'
+},
+{
+  paikka: 'Koskitie, 44580 Viitasaari',
+  lat: 63.04888553642941,  
+  lng: 25.542487835360227,
+  luiskantyyppi:'betoniliuska kaislikkoväylään'
+},
 {
   paikka: 'Toivolantie 50, 44760 Viitasaari',
   lat: 63.14778644019693,  
